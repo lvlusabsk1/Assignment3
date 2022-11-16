@@ -4,22 +4,22 @@ let mongoose = require('mongoose');
 
 // connect with model
 
-let Book = require('../models/book')
+let Run = require('../models/run')
 
 /*Read Operation*/
 /* get route*/
 
 router.get('/', (req,res,next)=>{
-    Book.find((err, booklist)=>{
+    Run.find((err, runs)=>{
       if(err)
       {
         return console.error(err);      
     }
     else
     {
-        res.render('book',{
-            title: 'Book List', 
-            Booklist: booklist
+        res.render('run',{
+            title: 'Runs List', 
+            Runs: runs
         });
     }  
     });

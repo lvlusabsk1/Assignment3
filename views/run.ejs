@@ -22,13 +22,13 @@
         <th class = "text-center">Speed (km/h)</th>
         </tr>
         <!-- repeat template to show db -->
-        <% for(let count=0; count<Booklist.length; count++){ %>
+        <% for(let count=0; count<Runs.length; count++){ %>
             <tr>
-                <td class = "text-ceter"><%= Booklist[count].name %></td>
-                <td class = "text-ceter"><%= Booklist[count].author %></td> 
-                <td class = "text-ceter"><%= Booklist[count].published %></td>
-                <td class = "text-ceter"><%= Booklist[count].description %></td>
-                <td class = "text-ceter"><%= Booklist[count].price %></td>
+                <td class = "text-ceter"><%= Runs[count].Day %></td>
+                <td class = "text-ceter"><%= Runs[count].Name %></td> 
+                <td class = "text-ceter"><%= Runs[count].Distance %></td>
+                <td class = "text-ceter"><%= Runs[count].Time %></td>
+                <td class = "text-ceter"><%= Runs[count].Speed %></td>
             </tr>
 
         <%} %>
