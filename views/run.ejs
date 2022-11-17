@@ -5,30 +5,30 @@
   <div class="container">
     
     <div class = "row">
-    <div class = "col-md-offset-3 col-md-6">
+    <div class = "col-md-offset-3 col-md-10">
         <h1><%=title%></h1>
         <br>
-   <table class = "table-bordered table-striped table-hover">
+   <table class = "table table-bordered table-striped table-hover">
        
-        <tr>
-        <th class = "text-center">Day</th>
+        <tr class = "d-flex">
+        <th class = "text-center col-3">Day</th>
         
-        <th class = "text-center">Name</th>
+        <th class = "text-center col-3">Name</th>
         
-        <th class = "text-center">Distance (km)</th>
+        <th class = "text-center col-2">Distance (km)</th>
         
-        <th class = "text-center">Time (secs)</th>
+        <th class = "text-center col-2">Time (secs)</th>
         
-        <th class = "text-center">Speed (km/h)</th>
+        <th class = "text-center col-2">Speed (km/h)</th>
         </tr>
         <!-- repeat template to show db -->
         <% for(let count=0; count<Runs.length; count++){ %>
-            <tr>
-                <td class = "text-ceter"><%= Runs[count].Day %></td>
-                <td class = "text-ceter"><%= Runs[count].Name %></td> 
-                <td class = "text-ceter"><%= Runs[count].Distance %></td>
-                <td class = "text-ceter"><%= Runs[count].Time %></td>
-                <td class = "text-ceter"><%= Runs[count].Speed %></td>
+            <tr class = "d-flex">
+                <td class = "text-center col-3"><%= Runs[count].Day %></td>
+                <td class = "text-center col-3"><%= Runs[count].Name %></td> 
+                <td class = "text-center col-2"><%= Runs[count].Distance %></td>
+                <td class = "text-center col-2"><%= Runs[count].Time %></td>
+                <td class = "text-center col-2"><%= Runs[count].Speed %></td>
             </tr>
 
         <%} %>
