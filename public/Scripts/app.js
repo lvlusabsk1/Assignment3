@@ -1,4 +1,4 @@
-// IIFE --> Immediately invoked function expression
+
 (function(){
     function Start()
     {
